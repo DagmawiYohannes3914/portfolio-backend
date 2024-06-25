@@ -1,0 +1,71 @@
+# Backend .gitignore
+# Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# Django specific
+*.log
+*.pot
+*.pyc
+*.so
+*.zip
+*.pyo
+*.pyd
+*.sqlite3
+db.sqlite3
+
+# Django migrations
+**/migrations/*
+!**/migrations/__init__.py
+
+# Local settings
+local_settings.py
+
+# Media files
+media/
+
+# Static files
+staticfiles/
+static/
+
+# Coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+
+# pytest
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+
+# Environments
+.env
+.env.*
+
+# Sentry files
+.sentryclirc
+
+# JetBrains IDEs
+.idea/
+
+# Django REST framework related
+__pycache__/
+.DS_Store
+
+# Cors headers related (if any temporary files are created by your config)
+corsheaders/
