@@ -31,3 +31,14 @@ class Contact(models.Model):
     email = models.EmailField()
     message = models.TextField()
     date_sent = models.DateTimeField(auto_now_add=True)
+
+
+class Blog(models.Model):
+    title = models.CharField(max_length=200)
+    content = models.TextField()
+    image = models.ImageField(upload_to='blog_images/', blank=True, null=True)
+    video = models.FileField(upload_to='blog_videos/', blank=True, null=True)
+    date_created = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.title
